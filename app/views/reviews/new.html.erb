@@ -1,0 +1,9 @@
+<div class="container"><h1>A new review</h1></div>
+
+<div class="container">
+  <%= simple_form_for([@restaurant, @review]) do |f| %>
+    <%= f.input :content, label: "Your experience"%>
+    <%= f.input :rating %>
+    <%= f.submit 'Create the review' %>
+  <% end %>
+</div>
